@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    height: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
+li{
+    list-style-type: none;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    color: rgb(250, 250, 250);
+    padding: 250px 0px 50px 50px;
+    font: bold;
+}
+
+.bannerAnuncio{
+    background-image: url(../imagenes/bannerSiberiano.jpeg);
+    background-size: 100%;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.tarjetaAnimal{
+    width: 380px;
+    height: 200px;
+    background-color: rgb(155, 151, 151);
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+#divAnuncio{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.icono{
+    object-fit: contain;
+    width: 25px;
+    padding-right: 1px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 380px;
+    height: 40px;
+    background-color: rgb(231, 129, 34);
+    margin-top: 20px;
+}
+
+#icono-p{
+    display: inline;
+}
+
+p{
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+#p-precio{
+    color: darkgreen;
+}

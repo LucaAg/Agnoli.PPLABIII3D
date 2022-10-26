@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" type="module" defer></script>
+    <script src="./js/anuncio_Mascota.js" type="module" defer></script>
+    <link rel="stylesheet" href="./css/spinner.css">  
+    <link rel="stylesheet" href="./css/validaciones.css"> 
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <title>Animales</title>
+</head>
+<body>
+    <header>     
+                <nav id="nav-contenedor">   
+                    <a href="./index.html"><img src="./imagenes/leon.png" class="logo" alt="Leoncito"></a>               
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="./administracion.html">Administracion</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>  
+    </header>   
+
+    <main>
+        <br>
+    <h1>Administracion</h1>
+    <img class="banner" src="./imagenes/elefanteBanner.jpg" alt="Elefante atardecer">
+
+    <section id="secFormulario">   
+            <form class="formulario">
+                <fieldset>
+                    <legend>Informacion Del Anuncio</legend>    
+                    <label for="tituloForm">TITULO:
+                        <input id="titulo" type="text" name="txtTitulo" placeholder="Titulo" required>
+                        <small></small>
+                    </label>       
+                    
+                    <label>DESCRIPCION:
+                        <input id="descripcion" type="text" name="txtDescripcion" placeholder="Descripcion" required>
+                        <small></small>
+                    </label>   
+
+                    <label class="label">ANIMAL:
+                        <div class="radio">                 
+                            <label class="tipoAnimal">
+                                <input id="radioButton" type="radio" name="txtTipoAnimal" value="Perro" id="perro" checked>  PERRO
+                            </label>
+                         
+                            <label class="tipoAnimal">
+                                <input id="radioButton" type="radio" name="txtTipoAnimal" value="Gato" id="gato">  GATO
+                            </label>
+                        </div>      
+                    </label>                                          
+                    
+                    <label>PRECIO:<input class="precioVenta" id="precio" type="text" name="txtPrecio" placeholder="Precio" required> 
+                        <small></small>
+                    </label>
+                    
+                   <div id="contenedorAnimales">
+                    <label id="labelAnimales">
+                        <img id="logos" src="./imagenes/burro.png" alt="Burro">
+                        <input id="animales" type="text" name="txtRaza" placeholder="Raza" required>
+                        <small></small>
+                    </label>
+                    <label id="labelAnimales">
+                        <img id="logos" src="./imagenes/oso-hormiguero.png" alt="Oso hormiguero">
+                        <input id="animales" type="text" name="txtFecha" placeholder="dd/mm/aaaa" required>
+                    <small></small>
+                    </label>
+                    <label id="labelAnimales">
+                        <img id="logos" src="./imagenes/vacuna.png" alt="Vacuna">
+                        <select id="animales" class="select" name="txtVacuna" requiered>
+                            <option id="opcion" value="Si" selected>Si</option>
+                            <option id="opciones" value="No">No</option>
+                        </select>
+                        <small></small>
+                    </label>                 
+                   </div>                                                                                                                       
+                    <label class="hidden">          
+                        <input type="text" name="txtId" class="hidden">
+                    </label>
+                    <input id="btnAgregarModificar" type="submit" value="Agregar"> 
+                    <input id="btnEliminar" type="button" value="Eliminar">  
+                    <input id="btnLimpiar" type="button" value="Limpiar">                                   
+                </fieldset>              
+            </form>          
+    </section>
+    <section>
+        <h2>Listado activo</h2>
+        <div class="spinner hidden"></div>
+        <div id="divTabla" class="hidden"> </div>
+    </section>
+    </main>
+    <footer class="footer">             
+            <nav id="nav-contenedor">              
+                <ul>          
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="./administracion.html">Administracion</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>                                                                     
+                </ul>    
+            </nav>   
+            <p id="p-footer">Todos los Derechos Reservados 2022 &copy;</p>         
+    </footer>   
+</body>
+</html>
